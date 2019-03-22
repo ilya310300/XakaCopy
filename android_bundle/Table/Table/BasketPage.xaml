@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xakaton.BasketPage"
+             Appearing="BasketPage_OnAppearing">
+    <ContentPage.Resources>
+        <Style x:Key="LabelInfo"  TargetType="Label">
+            <Setter Property="TextColor" Value="#4c6c9b"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="7,2"/>
+            <Setter Property="HorizontalTextAlignment" Value="Start"/>
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"></RowDefinition> 
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="60"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="КОРЗИНА" FontSize="22" TextColor="#486ba1"></Label>
+            <ScrollView Grid.Row="1" Grid.Column="0" BackgroundColor="White" HorizontalScrollBarVisibility="Never">
+                <StackLayout x:Name ="MainStackLayout">
+
+                </StackLayout>
+            </ScrollView>
+            <Frame Grid.Row="2" Grid.Column="0" BackgroundColor="#f6bf64" CornerRadius="30" HorizontalOptions="Center" VerticalOptions="Center" Padding="5">
+                <Label x:Name="MainLabel" Text="" FontSize="22" TextColor="#486ba1"></Label>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

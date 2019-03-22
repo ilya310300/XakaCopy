@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xakaton.DishPage"
+             Appearing="DishPage_OnAppearing"
+             BackgroundColor="White">
+    <ContentPage.Resources>
+        <Style x:Key="LabelInfo"  TargetType="Label">
+            <Setter Property="TextColor" Value="#1c1c1c"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="5,0"/>
+        </Style>
+        <Style x:Key="FrameInfo"  TargetType="Frame">
+            <Setter Property="BorderColor" Value="#f6c36d"/>
+            <Setter Property="CornerRadius" Value="15"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid x:Name="MainGrid" BackgroundColor="White" Margin="10,20,10,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="3*"></RowDefinition>
+                <RowDefinition Height="60"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Frame Grid.Row="0" Grid.Column="0" CornerRadius="30">
+                <Image Source="{Binding image_1}" Aspect="AspectFill"></Image>
+            </Frame>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition> 
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="{Binding TitleAndWeight}" TextColor="#164596" FontSize="18"></Label>
+                <Grid Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Frame Grid.Row="0" Grid.Column="0" Style="{StaticResource FrameInfo}" Margin="0,0,8,8">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="1" Grid.Column="0" Text="{Binding carbs}" Style="{StaticResource LabelInfo}"></Label>
+                            <Label Grid.Row="0" Grid.Column="0" Text="Углеводы" Style="{StaticResource LabelInfo}"></Label>
+                        </Grid>
+                    </Frame>
+                    <Frame Grid.Row="1" Grid.Column="0" Style="{StaticResource FrameInfo}" Margin="0,8,8,0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="1" Grid.Column="0" Text="{Binding proteins}" Style="{StaticResource LabelInfo}"></Label>
+                            <Label Grid.Row="0" Grid.Column="0" Text="Белки" Style="{StaticResource LabelInfo}"></Label>
+                        </Grid>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="1" Style="{StaticResource FrameInfo}" Margin="8,0,0,8">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="1" Grid.Column="0" Text="{Binding fats}" Style="{StaticResource LabelInfo}"></Label>
+                            <Label Grid.Row="0" Grid.Column="0" Text="Жиры" Style="{StaticResource LabelInfo}"></Label>
+                        </Grid>
+                    </Frame>
+                    <Frame Grid.Row="1" Grid.Column="1" Style="{StaticResource FrameInfo}"  Margin="8,8,0,0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding calories}" Style="{StaticResource LabelInfo}"></Label>
+                        </Grid>
+                    </Frame>
+                </Grid>
+                <Frame Grid.Row="1" Grid.Column="0" Style="{StaticResource FrameInfo}" HorizontalOptions="Center" 
+                       VerticalOptions="Center" Padding="16" BorderColor="White" HasShadow="False">
+                    <Label Text="В 100 граммах:" TextColor="#1c1c1c"></Label>
+                </Frame>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="0" Margin="0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Frame Grid.Row="0" Grid.Column="1" CornerRadius="30" BackgroundColor="White" Margin="20,0,0,0" BorderColor="#1c1c1c">
+                    <Grid Margin="0,5">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped"></TapGestureRecognizer>
+                        </Grid.GestureRecognizers>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="В корзину" FontSize="18" TextColor="#1с1с1с" HorizontalTextAlignment="End"></Label>
+                        <Image Grid.Row="0" Grid.Column="1" Source="Basket.png" Aspect="AspectFill" HorizontalOptions="Center"></Image>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Row="0" Grid.Column="0" CornerRadius="30" Style="{StaticResource FrameInfo}" BackgroundColor="White" BorderColor="#1c1c1c" Padding="0">
+                    <Label Text="{Binding price}" Style="{StaticResource LabelInfo}" FontSize="18" HorizontalOptions="Center"></Label>
+                </Frame>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

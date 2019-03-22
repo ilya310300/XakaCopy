@@ -1,0 +1,1 @@
+A:\Программирование\ПриложенияАПК\Table\Table\Table.UWP\Table.UWP.csproj;x86

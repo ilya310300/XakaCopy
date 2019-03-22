@@ -1,0 +1,12 @@
+A:\Программирование\ПриложенияАПК\Table\Table\Table\bin\Release\netstandard2.0\Table.deps.json
+A:\Программирование\ПриложенияАПК\Table\Table\Table\bin\Release\netstandard2.0\Table.dll
+A:\Программирование\ПриложенияАПК\Table\Table\Table\bin\Release\netstandard2.0\Table.pdb
+A:\Программирование\ПриложенияАПК\Table\Table\Table\obj\Release\netstandard2.0\App.xaml.g.cs
+A:\Программирование\ПриложенияАПК\Table\Table\Table\obj\Release\netstandard2.0\OfflinePage.xaml.g.cs
+A:\Программирование\ПриложенияАПК\Table\Table\Table\obj\Release\netstandard2.0\Table.csproj.CoreCompileInputs.cache
+A:\Программирование\ПриложенияАПК\Table\Table\Table\obj\Release\netstandard2.0\Table.AssemblyInfoInputs.cache
+A:\Программирование\ПриложенияАПК\Table\Table\Table\obj\Release\netstandard2.0\Table.AssemblyInfo.cs
+A:\Программирование\ПриложенияАПК\Table\Table\Table\obj\Release\netstandard2.0\XamlC.stamp
+A:\Программирование\ПриложенияАПК\Table\Table\Table\obj\Release\netstandard2.0\Table.dll
+A:\Программирование\ПриложенияАПК\Table\Table\Table\obj\Release\netstandard2.0\Table.pdb
+A:\Программирование\ПриложенияАПК\Table\Table\Table\obj\Release\netstandard2.0\Table.csprojAssemblyReference.cache
