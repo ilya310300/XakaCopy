@@ -16,14 +16,14 @@ _Команда HyperCollapse_
 
 | Где | Что | Зачем | Потыкать |
 | :---: | --- | --- | --- |
-| Android | Xamarin +  Visual Studio 2017 | Кросс платформенное приложение на выходе | [README по Android](https://github.com/RusOverLord/Xakaton/tree/master/android_bundle) |
-| Сервер | PHP + Nginx | Быстро развернули на VPS | [README по Web](https://github.com/RusOverLord/Xakaton/tree/master/server_bundle) |
+| Android | Xamarin +  Visual Studio 2017 | Кросс платформенное приложение на выходе | [README по Android](https://github.com/ilya310300/XakaCopy/tree/master/android_bundle) |
+| Сервер | PHP + Nginx | Быстро развернули на VPS | [README по Web](https://github.com/ilya310300/XakaCopy/tree/master/server_bundle) |
 | БД | MySQL | Привычная база, приятные конкурсы | [Безпарольный доступ к БД](https://food.spatecon.ru/pma) |
 
 ### Демонстрация
 [Видео на YouTube с комментариями](https://www.youtube.com/watch?v=RgZTaWjAAYI)
 
-Вы также можете установить приложение на свое Android устройство с помощью собранного apk файла: [ru.spatecon.food.apk](https://github.com/RusOverLord/Xakaton/blob/master/android_bundle/ru.spatecon.food.apk?raw=true)
+Вы также можете установить приложение на свое Android устройство с помощью собранного apk файла: [ru.spatecon.food.apk](https://github.com/ilya310300/XakaCopy/blob/master/android_bundle/ru.spatecon.food.apk?raw=true)
 
 [![Видео с демонстрацией](asset/screen3.png)
 ](https://food.spatecon.ru/images/demo.mp4)
